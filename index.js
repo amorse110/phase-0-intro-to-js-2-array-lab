@@ -13,25 +13,25 @@ function destructivelyRemoveLastCat() {
 }
 
 function destructivelyRemoveFirstCat() {
-    cats.shift()
+    cats.shift();
 }
 
 function appendCat(name) {
-    const allCats = [...cats, "Broom"];
-    return allCats
+    const moreCats = [...cats, name];
+    return moreCats;
 }
 
 function prependCat(name) {
-    const allCats2 = ["Arnold", ...cats];
-    return allCats2
+    const moreCats2 = [name, ...cats];
+    return moreCats2;
 }
 
 function removeLastCat() {
-    const allCats3 = cats.slice(0, 2)
-    return allCats3
+    const lessCats = cats.slice(0, cats.length - 1);
+    return lessCats;
 }
 
 function removeFirstCat() {
-    const allCats4 = cats.slice(1)
-    return allCats4
+    const lessCats2 = cats.slice(1);
+    return lessCats2;
 }
